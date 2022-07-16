@@ -5,29 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Time tracking dashboard</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <main class="main">
-    Report for
-    Jeremy Robson
-  
-    Daily
-    Weekly
-    Monthly
-  
-    Work
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
+    <div class="dashboard-container">
+      <div class="dasboard-head">
+        <div class="dashboard-header">
+          <img src="assets/img/image-jeremy.png" alt="" class="header__img">
+          <p class="header__user">
+            <span class="report-for">
+              Report for
+            </span>
+            <span class="user">
+              Jeremy Robson
+            </span>
+          </p>
+        </div>
+        <div class="dashboard-time">
+          <div class="dashboard-time__item">Daily</div>
+          <div class="dashboard-time__item">Weekly</div>
+          <div class="dashboard-time__item">Monthly</div>
+        </div>
+      </div>
+      <div class="dashboard-cards">
+        <!-- Codigo de ejemplo -->
+        <div class="card">
+          <div class="card__back">
+            <img src="assets/icons/icon-exercise.svg" alt="" class="icon">
+          </div>
+          <div class="card__content">
+            <img src="assets/icons/icon-ellipsis.svg" alt="" class="icon">
+            <h2 class="title">
+              Work
+            </h2>
+            <p class="hours">
+              32hrs
+            </p>
+            <p class="last-week">
+              Last Week - 36hrs
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+      Coded by <a href="https://github.com/sanchez-dev1906" target="_blank">Joel Sanchez</a>.
     </p>
   </footer>
 </body>
