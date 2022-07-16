@@ -1,0 +1,65 @@
+.dashboard-head
+{
+  background-color: var(--bg-card);
+  border-radius: 1rem;
+
+  .header
+  {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem; 
+
+    border-radius: 1rem;
+    background-color: var(--bg-header);
+
+    &__user
+    {
+      .report-for
+      {
+        font-size: 14px;
+      }
+      .user
+      {
+        font-size: 1.5rem;
+        font-weight: 300;
+        color: var(--text-color-active)
+      }
+    }
+    &__img
+    {
+      width: 4rem;
+      border: solid 2px var(--text-color-active);
+      background-color: var(--text-color-active);
+      border-radius: 100vmax;
+    }
+  }
+}
+.dashboard-time
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  &__item
+  {
+    cursor: pointer;
+    &.active
+    {
+      &:hover
+      {
+        color: var(--text-color-active);
+      }
+      color: var(--text-color-active);
+    }
+    &:hover
+    {
+      color: var(--text-color-hover);
+    }
+    &:active
+    {
+      color: var(--text-color-active);
+    }
+  }
+}
