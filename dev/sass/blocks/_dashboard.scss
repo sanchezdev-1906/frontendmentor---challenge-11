@@ -8,3 +8,10 @@
   user-select: none;
   margin: 1.5rem;
 }
+.dashboard-cards
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: max-content;
+  gap: 2rem;
+}

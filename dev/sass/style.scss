@@ -1,5 +1,6 @@
-@import "base/variables.scss";
-@import "base/base.scss";
+@import "base/normalize";
+@import "base/variables";
+@import "base/base";
 @import "blocks/dashboard";
 @import "blocks/dashboard-cards";
 @import "blocks/dashboard-head";

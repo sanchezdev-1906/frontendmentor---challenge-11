@@ -1,0 +1,95 @@
+.card
+{
+  background-image: linear-gradient(to bottom, var(--bg-back) 50%, transparent 50%);
+  border-radius: 1rem;
+  &--work
+  {
+    --bg-back: var(--work);
+  }
+  &--play
+  {
+    --bg-back: var(--play);
+  }
+  &--study
+  {
+    --bg-back: var(--study);
+  }
+  &--exercise
+  {
+    --bg-back: var(--exercise);
+  }
+  &--social
+  {
+    --bg-back: var(--social);
+  }
+  &--self-care
+  {
+    --bg-back: var(--self-care);
+  }
+  &__content
+  {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    grid-template-rows: repeat(2, max-content);
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background-color: var(--bg-card);
+    border-radius: 1rem;
+    cursor: pointer;
+
+    transition: background-color .2s;
+    &:hover
+    {
+      background-color: var(--bg-card-hover); 
+    }
+    .icon
+    {
+      height: 1.5rem;
+      width: 1.5rem;
+      place-self: center end;
+      grid-column: 2/3;
+      grid-row: 1/2;
+      cursor: pointer;
+      object-fit: contain;
+      &:hover
+      {
+        filter: brightness(10)
+      }
+    }
+    .title
+    {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--text-color-active);
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    .last
+    {
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+    .hours
+    {
+      font-weight: 300;
+      font-size: 2rem;
+      color: var(--text-color-active);
+      grid-column: 1/2;
+      grid-row: 2/3;
+    }
+  }
+  &__back
+  {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    height: 50px;
+
+    overflow: hidden;
+    border-radius: 1rem;
+    background-color: var(--bg-back);
+  }
+}
