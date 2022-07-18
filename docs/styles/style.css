@@ -346,6 +346,10 @@ template {
   --text-color: #bdc1ff;
   --text-color-hover: #f4f4f4db;
   --text-color-active: #fff;
+  --link-color: #5746EA;
+  --link-color-hover: #5344dd;
+  --link-color-active: #372c92;
+  --link-color-visited: #449dba;
   --work: #ff8c66;
   --play: #56c2e6;
   --study: #ff5c7c;
@@ -377,12 +381,13 @@ h2 {
   grid-auto-rows: max-content;
   gap: 2rem;
   user-select: none;
-  margin: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
 }
 
 .dashboard-cards {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-auto-rows: max-content;
   gap: 2rem;
 }
@@ -433,6 +438,7 @@ h2 {
   grid-row: 1/2;
   cursor: pointer;
   object-fit: contain;
+  border-radius: 100vmax;
 }
 .card__content .icon:hover {
   filter: brightness(10);
@@ -513,6 +519,32 @@ h2 {
 }
 .dashboard-time__item:active {
   color: var(--text-color-active);
+}
+
+@media screen and (min-width: 800px) {
+  .dashboard-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.footer {
+  padding: 1.5rem;
+  line-height: 2rem;
+  background-color: var(--bg-card);
+}
+.footer .attribution a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+.footer .attribution a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline;
+}
+.footer .attribution a:active {
+  color: var(--link-color-active);
+}
+.footer .attribution a:visited {
+  color: var(--link-color-visited);
 }
 
 /*# sourceMappingURL=style.css.map */

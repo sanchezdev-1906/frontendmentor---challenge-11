@@ -53,6 +53,7 @@
       grid-row: 1/2;
       cursor: pointer;
       object-fit: contain;
+      border-radius: 100vmax;
       &:hover
       {
         filter: brightness(10)
