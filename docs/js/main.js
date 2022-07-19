@@ -4,7 +4,7 @@ let selectedOption = options.children[1];
 
 const getData = async () => 
 {
-  const json = await fetch("/docs/data/data.json")
+  const json = await fetch("../data/data.json")
   .then(res => res.json())
   .then(res => res)
   return await json;
