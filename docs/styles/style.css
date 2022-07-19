@@ -363,6 +363,10 @@ template {
 }
 
 body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr max-content;
+  min-height: 100vh;
   margin: 0;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
