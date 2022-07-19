@@ -574,6 +574,9 @@ h2 {
   line-height: 2rem;
   background-color: var(--bg-card);
 }
+.footer .attribution {
+  text-align: center;
+}
 .footer .attribution a {
   color: var(--link-color);
   text-decoration: none;

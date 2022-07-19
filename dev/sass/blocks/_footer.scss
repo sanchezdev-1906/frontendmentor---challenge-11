@@ -4,22 +4,26 @@
   padding: 1.5rem;
   line-height: 2rem;
   background-color: var(--bg-card);
-  .attribution a
+  .attribution
   {
-    color: var(--link-color);
-    text-decoration: none;
-    &:hover
+    text-align: center;
+    a
     {
-      color: var(--link-color-hover);
-      text-decoration: underline;
-    }
-    &:active
-    {
-      color: var(--link-color-active);
-    }
-    &:visited
-    {
-      color: var(--link-color-visited);
+      color: var(--link-color);
+      text-decoration: none;
+      &:hover
+      {
+        color: var(--link-color-hover);
+        text-decoration: underline;
+      }
+      &:active
+      {
+        color: var(--link-color-active);
+      }
+      &:visited
+      {
+        color: var(--link-color-visited);
+      }
     }
   }
 }
