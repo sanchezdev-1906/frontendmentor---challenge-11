@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/sanchez-dev1906/frontendmentor---challenge-11/)
-- Live Site URL: [Github Pages](https://sanchez-dev1906.github.io/frontendmentor---challenge-11/)
+- Solution URL: [Github](https://github.com/sanchezdev-1906/frontendmentor---challenge-11/)
+- Live Site URL: [Github Pages](https://sanchezdev-1906.github.io/frontendmentor---challenge-11/)
 
 ## My process
 
